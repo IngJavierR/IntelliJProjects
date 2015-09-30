@@ -1,15 +1,18 @@
 package ScalaProject
 
+import java.util.{Locale, Date}
+import java.text.DateFormat._
+
 /**
  * @author ${user.name}
  */
 object App {
   
-  def foo(x : Array[String]) = x.foldLeft("")((a,b) => a + b)
-  
-  def main(args : Array[String]) {
-    println( "Hello World!" )
-    println("concat arguments = " + foo(args))
+  def main (args: Array[String]) {
+    println("Hello World2")
+    val ahora = new Date
+    val df = getDateInstance(LONG, Locale.US)
+    println(df format ahora)
   }
 
 }
