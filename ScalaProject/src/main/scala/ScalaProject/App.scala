@@ -14,5 +14,4 @@ object App {
     val df = getDateInstance(LONG, Locale.US)
     println(df format ahora)
   }
-
 }

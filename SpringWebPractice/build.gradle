@@ -1,0 +1,38 @@
+group 'SpringWebPractice'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+
+    compile 'ch.qos.logback:logback-classic:1.1.3'
+    compile 'org.springframework:spring-webmvc:4.1.6.RELEASE'
+    compile 'javax.servlet:jstl:1.2'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
+
+// Embeded Jetty for testing
+jettyRun {
+    httpPort = 8090
+    contextPath = 'SpringWeb'
+    reload = 'automatic'
+    scanIntervalSeconds = 10
+    stopPort = 8090
+    stopKey = 'stopKey'
+}
+
+jettyStop {
+    stopPort = 8090
+    stopKey = 'stopKey'
+}
+
