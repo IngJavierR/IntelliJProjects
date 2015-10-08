@@ -3,6 +3,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<spring:url value="/resources/css/bootstrap.min.css" var="bootstrapCss" />
+<link href="${bootstrapCss}" rel="stylesheet" />
 
 </head>
 
@@ -66,7 +68,11 @@
   </footer>
 </div>
 
+<spring:url value="/resources/js/bootstrap.min.js" var="bootstrapJs" />
+
+<script src="${bootstrapJs}"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 
 </body>
 </html>

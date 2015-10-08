@@ -23,16 +23,14 @@ dependencies {
 
 // Embeded Jetty for testing
 jettyRun {
-    httpPort = 8090
+    httpPort = 9090
     contextPath = 'SpringWeb'
     reload = 'automatic'
     scanIntervalSeconds = 10
-    stopPort = 8090
-    stopKey = 'stopKey'
 }
 
 jettyStop {
-    stopPort = 8090
+    stopPort = 9090
     stopKey = 'stopKey'
 }
 
