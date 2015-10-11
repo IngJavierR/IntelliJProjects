@@ -13,8 +13,17 @@
 <div class="container">
 
     <div class="row">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">Home</a></<li>
+            <li><a href="#">GitHub</a></<li>
+            <li><a href="#">SVN</a></<li>
+            <li><a href="#">Tutorial</a></<li>
+        </ul>
+    </div>
+
+    <div class="row">
         <div class="col-xs-12 col-lg-12" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">
-        <h1>${title} <small> ${msg} </small><h1>
+            <h1>${title} <small> ${msg} </small><h1>
         </div>
     </div>
 
@@ -37,8 +46,22 @@
             <p class="text-rigth">Text align rigth</p>
         </div>
         <div class="col-xs-4 col-lg-4" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">
-            <p class=""
+            <p class="text-muted">Text muted</p>
+            <p class="text-primary">Text primary</p>
+            <p class="text-success">Text success</p>
+            <p class="text-info">Text info</p>
+            <p class="text-warning">Text warning</p>
+            <p class="text-danger">Text danger</p>
         </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-2 col-lg-2" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">
+            <abbr title="Worl Wide Web">WWW</abbr><br>
+            <abbr title="Real Simple Indication" class="initialism">RSS</abbr>
+        </div>
+        <div class="col-xs-5 col-lg-5" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">Row 3 Col - 2</div>
+        <div class="col-xs-5 col-lg-5" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">Row 3 Col - 3</div>
     </div>
 
     <div class="row">
@@ -47,6 +70,10 @@
         </div>
         <div class="col-xs-5 col-lg-5" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">Row 3 Col - 2</div>
         <div class="col-xs-5 col-lg-5" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">Row 3 Col - 3</div>
+    </div>
+
+    <div class="row">
+        <div class="alert alert-success">Success! Well done its submitted.</div>
     </div>
 
 </div>
