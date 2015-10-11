@@ -16,8 +16,8 @@ public class WelcomeController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(Map<String, Object> model){
 
-        model.put("title", "Prueba Title");
-        model.put("msg", "Prueba Msg");
+        model.put("title", "Puebla Title");
+        model.put("msg", "Subtitle");
 
         return "index";
     }

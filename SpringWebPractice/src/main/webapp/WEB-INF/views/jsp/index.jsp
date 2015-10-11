@@ -1,72 +1,56 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<spring:url value="/resources/css/bootstrap.min.css" var="bootstrapCss" />
-<link href="${bootstrapCss}" rel="stylesheet" />
-
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<spring:url value="/resources/css/bootstrap.min.css" var="bootstrapCss" />
+	<link href="${bootstrapCss}" rel="stylesheet" />
 </head>
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-	<div class="navbar-header">
-		<a class="navbar-brand" href="#">Project Name</a>
-	</div>
-  </div>
-</nav>
-
-<div class="jumbotron">
-  <div class="container">
-	<h1>${title}</h1>
-	<p>
-		<c:if test="${not empty msg}">
-			Hello ${msg}
-		</c:if>
-
-		<c:if test="${empty msg}">
-			Welcome Welcome!
-		</c:if>
-        </p>
-        <p>
-		<a class="btn btn-primary btn-lg" 
-                    href="#" role="button">Learn more</a>
-	</p>
-	</div>
-</div>
 
 <div class="container">
 
-  <div class="row">
-	<div class="col-md-4">
-		<h2>Heading</h2>
-		<p>ABC</p>
-		<p>
-			<a class="btn btn-default" href="#" role="button">View details</a>
-		</p>
-	</div>
-	<div class="col-md-4">
-		<h2>Heading</h2>
-		<p>ABC</p>
-		<p>
-			<a class="btn btn-default" href="#" role="button">View details</a>
-		</p>
-	</div>
-	<div class="col-md-4">
-		<h2>Heading</h2>
-		<p>ABC</p>
-		<p>
-			<a class="btn btn-default" href="#" role="button">View details</a>
-		</p>
-	</div>
-  </div>
+    <div class="row">
+        <div class="col-xs-12 col-lg-12" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">
+        <h1>${title} <small> ${msg} </small><h1>
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="col-xs-12 col-lg-12" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">
+            <h1>Teoría de cuerdas<p><small>Descripcion</small></p></h1>
+            <p class="lead">La teoría de cuerdas es un modelo fundamental de física teórica que básicamente asume que las partículas materiales aparentemente puntuales son en realidad "estados vibracionales" de un objeto extendido más básico llamado "cuerda" o "filamento".1</p>
+        </div>
+    </div>
 
-  <hr />
-  <footer>
-	<p>© Mkyong.com 2015</p>
-  </footer>
+    <div class="row">
+        <div class="col-xs-4 col-lg-4" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">
+            <small>This is small line</small><br>
+            <strong>This is strong line</strong><br>
+            <em>This is italic line</em>
+        </div>
+        <div class="col-xs-4 col-lg-4" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">
+            <p class="text-left">Text align left</p>
+            <p class="text-center">Text align center</p>
+            <p class="text-rigth">Text align rigth</p>
+        </div>
+        <div class="col-xs-4 col-lg-4" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">
+            <p class=""
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-2 col-lg-2" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">
+            <img src="./resources/img/ipn.png" class="img-responsive" alt="Responsive Image"/>
+        </div>
+        <div class="col-xs-5 col-lg-5" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">Row 3 Col - 2</div>
+        <div class="col-xs-5 col-lg-5" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">Row 3 Col - 3</div>
+    </div>
+
 </div>
+
 
 <spring:url value="/resources/js/bootstrap.min.js" var="bootstrapJs" />
 
