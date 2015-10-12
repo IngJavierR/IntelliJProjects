@@ -22,6 +22,13 @@
     </div>
 
     <div class="row">
+        <div ng-app="" class="col-xs-12 col-lg-12" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">
+            <p> Name: <input type="text" ng-model="name"/> </p>
+            <p> Name is: <span ng-bind="name"></span> </p>
+        </div>
+    </div>
+
+    <div class="row">
         <div class="col-xs-12 col-lg-12" style="box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444">
             <h1>${title} <small> ${msg} </small><h1>
         </div>
