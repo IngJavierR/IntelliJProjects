@@ -1,0 +1,38 @@
+group 'SpringWs'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+jettyRun {
+    httpPort = 8090
+    contextPath = 'SpringWs'
+    reload = 'automatic'
+    scanIntervalSeconds = 10
+    stopPort = 8090
+    stopKey = 'stopKey'
+}
+
+jettyStop {
+    stopPort = 8090
+    stopKey = 'stopKey'
+}
+
+def cxfVersion = "3.0.5"
+
+dependencies {
+    //WebService
+    compile "org.apache.cxf:cxf-rt-frontend-jaxws:${cxfVersion}"
+    compile "org.apache.cxf:cxf-rt-transports-http:${cxfVersion}"
+    compile "org.apache.cxf:cxf-rt-ws-security:${cxfVersion}"
+    compile "org.springframework:spring-web:3.2.13.RELEASE"
+    compile 'org.springframework.ws:spring-ws-core:2.2.2.RELEASE'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
